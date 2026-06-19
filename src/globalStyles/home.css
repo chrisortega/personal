@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+body {
+    background-color: #008080;
+}
+
+
+.win98-button {
+    /* Colors & Typography */
+    background-color: #c0c0c0;
+    color: #000000;
+    font-family: "MS Sans Serif", Tahoma, sans-serif;
+    font-size: 11px;
+    box-sizing: border-box;
+
+    /* Sizing & Alignment */
+    min-width: 75px;
+    min-height: 23px;
+    padding: 2px 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    /* The 3D Raised Bevel Effect */
+    border: 1px solid #000000;
+    box-shadow:
+        inset 1px 1px 0px #ffffff,
+        inset -1px -1px 0px #808080,
+        inset 2px 2px 0px #dfdfdf;
+
+    /* Disable modern browser styles */
+    outline: none;
+    -webkit-appearance: none;
+    cursor: default;
+}
+
+/* The Pressed/Active State */
+.win98-button:active {
+    /* The 3D Sunken Effect */
+    box-shadow:
+        inset 1px 1px 0px #000000,
+        inset -1px -1px 0px #ffffff,
+        inset 2px 2px 0px #808080;
+
+    /* Text shifts down and right by 1 pixel when clicked */
+    padding: 3px 11px 1px 13px;
+}
+
+/* The Focused State (Keyboard Navigation) */
+.win98-button:focus {
+    /* Dotted inner focus rectangle */
+    outline: 1px dotted #000000;
+    outline-offset: -4px;
+}
