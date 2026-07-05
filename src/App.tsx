@@ -8,7 +8,9 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/therians" element={<Therians />} />
+
     </Routes>
+
   </BrowserRouter>
 }
 export default App

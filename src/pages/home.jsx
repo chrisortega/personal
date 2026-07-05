@@ -3,6 +3,7 @@
 
 import jasus from '../assets/jesus-bailando.gif';
 import '../globalStyles/home.css';
+import Roboto from '../components/roboto';
 
 function Home() {
     const handleAboutClick = () => {
@@ -10,6 +11,7 @@ function Home() {
     }
     return (
         <div className="container">
+            <Roboto />
             <img src={jasus} alt="jesus dancing" />
             <h1 className="hover-box">Christian Ortega </h1>
             <p>
