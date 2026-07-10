@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { useSearchParams } from 'react-router-dom';
 
-
+import useFetcher from "../hooks/useFetcher";
 import "../globalStyles/sonic4.css";
-
+const URL = "https://function-bun-production-3f32.up.railway.app/"
 
 const Sonic4 = () => {
+    const [invitees, setInvitees] = useState([]);
     const [searchParams, setSearchParams] = useSearchParams();
 
     const [confirmar, setConfirmar] = useState({
@@ -13,17 +14,26 @@ const Sonic4 = () => {
         "asistencia": "",
         "codigo": ""
     });
-    const ConfirmAssist = () => {
+    const ConfirmAssist = async () => {
         setConfirmar({
             "nombre": searchParams.get("nombre"),
             "asistencia": searchParams.get("asistencia"),
             "codigo": searchParams.get("codigo")
         });
-        if (confirmar.nombre === null || confirmar.codigo === null || confirmar.asistencia === null) {
+
+
+        if (confirmar.nombre === null) {
             alert("no estas invitado")
 
         }
-
+        else {
+            let response = await useFetcher(URL, confirmar);
+            if (response === null) {
+                alert("no estas invitado")
+            } else {
+                setInvitees(response.INVITEES);
+            }
+        }
     }
 
     return (
@@ -66,8 +76,10 @@ const Sonic4 = () => {
                         </iframe>
                     </div>
                 </div>
+                {invitees}
                 <div className="footer-invitation">
                     <button onClick={ConfirmAssist}>CONFIRMAR ASISTENCIA</button>
+
                 </div>
 
             </div>

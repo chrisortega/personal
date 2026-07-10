@@ -1,0 +1,56 @@
+.RobotBody {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: #000;
+    /* Simulates the rounded frame of a vintage CRT */
+    border-radius: 50% / 10%;
+    /* Fades into a dull green/black "ghosted" image when off */
+    background-image: radial-gradient(circle, rgba(10, 30, 20, 0.8) 0%, rgba(5, 10, 5, 0.95) 70%, #000 100%);
+    color: #1a3c20;
+    text-shadow: 0 0 10px rgba(5, 50, 20, 0.5);
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+
+
+}
+
+.eye-base {
+    position: absolute;
+    font-size: 24px;
+    top: 30%;
+}
+
+
+.left-eye {
+    left: 30%;
+}
+
+.right-eye {
+    right: 30%;
+}
+
+
+.center-circle {
+    position: absolute;
+    
+    width: 60px;
+    height: 60px;
+    background-color: #ff4757;
+    border-radius: 50%;
+    /* Makes the square a perfect circle */
+
+    /* 3. Shift the element back by 50% of its own width/height */
+    /* This snaps the exact CENTER of the circle to your X, Y coordinates */
+    transform: translate(-50%, -50%);
+}
