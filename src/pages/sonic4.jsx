@@ -63,7 +63,7 @@ const Sonic4 = () => {
                             Circuito la calma 2016
                         </div>
                         <div className="nuckles-image">
-                            <img src="src/assets/knuckles.png" className="knuckles" alt="knuckles" />
+                            <img src="assets/knuckles.png" className="knuckles" alt="knuckles" />
                         </div>
                     </div>
                     <div className="map-section">

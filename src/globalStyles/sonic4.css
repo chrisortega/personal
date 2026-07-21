@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:wght@600;800&display=swap');
 
 body {
-    background-color: #0f172a; /* Dark background to make the card pop */
+    background-color: #0f172a;
+    /* Dark background to make the card pop */
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
@@ -20,7 +21,7 @@ body {
     min-width: 350px;
     height: 95%;
     max-height: 800px;
-    background-image: url('src/assets/sonicbk.jpg');
+    background-image: url('assets/sonicbk.jpg');
     background-color: #0d47a1;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,9 +29,11 @@ body {
     position: relative;
 
     border-radius: 30px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(24, 117, 209, 0.5); /* Blue glow */
-    border: 4px solid #facc15; /* Golden ring color */
-    
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(24, 117, 209, 0.5);
+    /* Blue glow */
+    border: 4px solid #facc15;
+    /* Golden ring color */
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -56,7 +59,7 @@ body {
     z-index: 10;
     text-align: center;
     gap: 15px;
-    
+
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
     padding: 20px;
@@ -76,7 +79,8 @@ body {
 .title2 {
     font-family: 'Bangers', cursive;
     font-size: 4.5rem;
-    color: #ef4444; /* Sonic red shoes color */
+    color: #ef4444;
+    /* Sonic red shoes color */
     text-shadow: 3px 3px 0 #991b1b, 0 0 15px #ef4444;
     -webkit-text-stroke: 2px white;
     margin: -10px 0;
@@ -86,7 +90,7 @@ body {
     font-size: 1.2rem;
     font-weight: 800;
     color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     margin: 10px 0;
 }
 
@@ -100,7 +104,8 @@ body {
     margin-top: 15px;
 }
 
-.date, .address {
+.date,
+.address {
     background: rgba(255, 255, 255, 0.9);
     color: #0d47a1;
     padding: 10px 15px;
@@ -111,7 +116,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     border: 2px solid #0d47a1;
 }
 
@@ -125,7 +130,7 @@ body {
     width: 70px;
     height: auto;
     object-fit: contain;
-    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.5));
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
     transition: transform 0.3s ease;
 }
 
@@ -179,4 +184,4 @@ body {
     width: 100%;
     height: 100%;
     border: 0;
-}
+}
