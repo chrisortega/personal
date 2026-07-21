@@ -5,6 +5,9 @@ import useFetcher from "../hooks/useFetcher";
 import "../globalStyles/sonic4.css";
 const URL = "https://function-bun-production-3f32.up.railway.app/"
 
+
+import knuckles from '../assets/knuckles.png';
+
 const Sonic4 = () => {
     const [invitees, setInvitees] = useState([]);
     const [searchParams, setSearchParams] = useSearchParams();
@@ -63,7 +66,7 @@ const Sonic4 = () => {
                             Circuito la calma 2016
                         </div>
                         <div className="nuckles-image">
-                            <img src="assets/knuckles.png" className="knuckles" alt="knuckles" />
+                            <img src={knuckles} className="knuckles" alt="knuckles" />
                         </div>
                     </div>
                     <div className="map-section">
