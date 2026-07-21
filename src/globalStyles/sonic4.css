@@ -21,7 +21,7 @@ body {
     min-width: 350px;
     height: 95%;
     max-height: 800px;
-    background-image: url('assets/sonicbk.jpg');
+    background-image: url('../assets/sonicbk.jpg');
     background-color: #0d47a1;
     background-repeat: no-repeat;
     background-size: cover;
