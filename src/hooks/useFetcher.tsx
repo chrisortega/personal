@@ -5,7 +5,7 @@ interface Invite {
 }
 
 async function useFetcher(url: string, data: Invite) {
-    var pending = true;
+    let pending = true;
     try {
 
         const response = await fetch(url + "?name=" + data.nombre, {
